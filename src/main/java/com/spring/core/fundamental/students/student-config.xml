@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ https://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+	 <bean class="com.spring.core.fundamental.students.StudentModel" name="Student1">
+
+		   <property name="firstName">
+		   	<value>Om</value>
+		   </property>
+		   
+		   <property name="lastName" value="PandeY"></property>
+		   <property name="email" value="omkumar887786@tgmail.com"></property>
+		   
+		   <property name="age">
+		   	<value>23</value>
+		   </property>
+		   
+		   <property name="phone">
+		   	<value>7464067216</value>
+		   </property>
+	 </bean>
+	 
+	 <bean class="com.spring.core.fundamental.students.StudentModel" name="Student2" p:firstName="Manvi Singh" p:lastName="Mishra" p:age="22" p:email="msinghmishra123@gmail.com" p:phone="6287881382" />
+	
+</beans>
+
+	 

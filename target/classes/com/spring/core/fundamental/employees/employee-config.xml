@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ https://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+	 <bean class="com.spring.core.fundamental.employees.EmployeeModel" name="Employee1">
+	 	<property name="name" value="Manvi Singh Mishra"></property>
+	 	<property name="phones">
+	 		<list>
+	 			<value>7464067216</value>
+	 			<value>6287881382</value>
+	 			<value>9835405715</value>
+	 			<value>9939266744</value>
+	 			<value>8877868382</value>
+	 		</list>
+	 	</property>
+	 	<property name="addresses">
+	 		<set>
+	 			<value>Delhi</value>
+	 			<value>Jaipur</value>
+	 			<value>Haryana</value>
+	 			<value>Utterpradesh</value>
+	 			<value>Bihar</value>
+	 		</set>
+	 	</property>
+	 	<property name="courses">
+	 		<map>
+	 			<entry key="backend" value="Java"></entry>
+	 			<entry key="frontend" value="Html"></entry>
+	 			<entry key="database" value="MySql"></entry>
+	 			<entry key="web" value="Angular"></entry>
+	 		</map>
+	 	</property>
+	 </bean>
+	 
+	
+	
+</beans>
+
+	 

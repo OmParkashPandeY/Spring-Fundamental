@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+     https://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/context
+     https://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <context:annotation-config /> 
+ 
+     <!-- <bean class="com.spring.core.fundamental.lifeCycle.LifeCycleModelWithConfig" name="bean1" init-method="init" destroy-method="destroy">
+          <property name="name" value="Meera Singh"></property>
+          <property name="age" value="22"></property>
+          <property name="phone" value="7845124578"></property>
+          <property name="email" value="meera.singh@gmail.com"></property>
+     </bean>
+
+     <bean class="com.spring.core.fundamental.lifeCycle.LifeCycleModelWithInterface" name="bean2">
+          <property name="name" value="Aayansh Mishra"></property>
+          <property name="age" value="22"></property>
+          <property name="phone" value="7464067216"></property>
+          <property name="email" value="aayanshmishra0099@gmail.com"></property>
+     </bean> -->
+
+     <bean class="com.spring.core.fundamental.lifeCycle.LifeCycleModelWithAnnotation" name="bean3">
+          <property name="name" value="Chulbul PandeY"></property>
+          <property name="age" value="22"></property>
+          <property name="phone" value="7464067216"></property>
+          <property name="email" value="chulbulpandey0099@gmail.com"></property>
+     </bean>
+
+</beans>
+
+	 

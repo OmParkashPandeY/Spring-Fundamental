@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:c="http://www.springframework.org/schema/c"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ https://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+ 
+
+ <bean class="com.spring.core.fundamental.constructorInjection.AddressModel" name="address1">
+	<constructor-arg  value="Dhabauli, Begusarai (Bihar)"></constructor-arg>
+	<constructor-arg  value="Ramjanpur, Dhabauli, Begusarai (Bihar)"></constructor-arg>
+	<constructor-arg  value="Begusarai"></constructor-arg>
+	<constructor-arg  value="Bihar"></constructor-arg>
+</bean>
+
+<!-- =========================================================================== -->
+
+<bean name="skill1" class="com.spring.core.fundamental.constructorInjection.SkillsModel" >
+	<constructor-arg  value="Java"></constructor-arg>
+	<constructor-arg  value="1 Year"></constructor-arg>
+	<constructor-arg  value="Backend Development"></constructor-arg>
+</bean>
+<bean name="skill2" class="com.spring.core.fundamental.constructorInjection.SkillsModel" >
+	<constructor-arg  value="Angular"></constructor-arg>
+	<constructor-arg  value="1.5 Year"></constructor-arg>
+	<constructor-arg  value="Frontend Development"></constructor-arg>
+</bean>
+<bean name="skill3" class="com.spring.core.fundamental.constructorInjection.SkillsModel" >
+	<constructor-arg  value="Flutter"></constructor-arg>
+	<constructor-arg  value="2 Year"></constructor-arg>
+	<constructor-arg  value="App Development"></constructor-arg>
+</bean>
+<bean name="skill4" class="com.spring.core.fundamental.constructorInjection.SkillsModel" >
+	<constructor-arg  value="MySQL"></constructor-arg>
+	<constructor-arg  value="1 Year"></constructor-arg>
+	<constructor-arg  value="Database Service"></constructor-arg>
+</bean>
+<bean name="skill5" class="com.spring.core.fundamental.constructorInjection.SkillsModel" >
+	<constructor-arg  value="HTML"></constructor-arg>
+	<constructor-arg  value="3.5 Year"></constructor-arg>
+	<constructor-arg  value="UI Development"></constructor-arg>
+</bean>
+
+<!-- =========================================================================== -->
+
+	<!-- <bean class="com.spring.core.fundamental.constructorInjection.ConstructorInjectionModel" name="user1">
+		<constructor-arg  value="OM PandeY"></constructor-arg>
+		<constructor-arg  value="12"></constructor-arg>
+	</bean> -->
+
+	<bean class="com.spring.core.fundamental.constructorInjection.ConstructorInjectionModel" name="user1">
+		<constructor-arg  value="OM PandeY"></constructor-arg>
+		<constructor-arg  value="12"></constructor-arg>
+		<constructor-arg  value="7464067216"></constructor-arg>
+		<constructor-arg >
+			<list>
+				<ref bean="skill1" />
+				<ref bean="skill2" />
+				<ref bean="skill3" />
+				<ref bean="skill4" />
+				<ref bean="skill5" />
+			</list>
+		</constructor-arg>
+		<constructor-arg  ref="address1"></constructor-arg>
+	</bean>
+
+	<!-- <bean 
+		class="com.spring.core.fundamental.constructorInjection.ConstructorInjectionModel" 
+		name="user1"
+		c:name="Om PandeY"
+		c:age="23"
+	></bean> -->
+</beans>
+
+	 
